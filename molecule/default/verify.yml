@@ -1,0 +1,10 @@
+---
+- name: Verify
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: run podman --version
+      command:
+        cmd: podman --version
