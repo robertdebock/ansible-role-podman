@@ -4,7 +4,7 @@ Install and configure podman on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-podman/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-podman/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-podman/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-podman)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/podman)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/podman)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-podman.svg)](https://github.com/robertdebock/ansible-role-podman/releases/)|
+|[![github](https://github.com/robertdebock/ansible-role-podman/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-podman/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-podman/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-podman)|[![quality](https://img.shields.io/ansible/quality/56309)](https://galaxy.ansible.com/robertdebock/podman)|[![downloads](https://img.shields.io/ansible/role/d/56309)](https://galaxy.ansible.com/robertdebock/podman)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-podman.svg)](https://github.com/robertdebock/ansible-role-podman/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
