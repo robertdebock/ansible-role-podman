@@ -6,5 +6,5 @@
 
   tasks:
     - name: run podman --version
-      command:
+      ansible.builtin.command:
         cmd: podman --version
