@@ -1,6 +1,6 @@
 # [podman](#podman)
 
-Install and configure podman on your system.
+Install and configure Podman on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
