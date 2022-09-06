@@ -24,7 +24,7 @@
   loop_control:
     label: "{{ item.option }}"
   notify:
-    - restart podman
+    - Restart podman
 
 - name: Start podman
   block:
