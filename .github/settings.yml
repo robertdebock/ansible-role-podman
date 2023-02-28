@@ -5,4 +5,4 @@
 repository:
   description: Install and configure Podman on your system.
   homepage: https://robertdebock.nl/
-  topics: podman, ansible, molecule, tox, playbook, hacktoberfest
+  topics: podman, ansible, molecule, tox, playbook
