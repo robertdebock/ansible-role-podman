@@ -12,6 +12,7 @@
   ansible.builtin.assert:
     that:
       - podman_user is string
+      - podman_user is not none
     quiet: yes
   when:
     - podman_user is defined
