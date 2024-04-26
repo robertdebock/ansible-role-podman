@@ -23,7 +23,7 @@ molecule:
       - image: "enterpriselinux"
         tag: "latest"
       - image: "fedora"
-        tag: "38"
+        tag: "39"
       - image: "fedora"
         tag: "latest"
       - image: "fedora"
