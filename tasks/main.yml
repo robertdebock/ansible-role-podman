@@ -36,3 +36,20 @@
   become_user: "{{ podman_user }}"
   when:
     - podman_user | length > 0
+
+- name: Manage podman containers
+  containers.podman.podman_container:
+    name: "{{ item.name }}"
+    image: "{{ item.image }}"
+    state: "{{ item.state | default('started') }}"
+    env: "{{ item.env | default(omit) }}"
+    publish: "{{ item.publish | default(omit) }}"
+    volume: "{{ item.volume | default(omit) }}"
+    restart_policy: "{{ item.restart_policy | default(omit) }}"
+    generate_systemd: "{{ item.generate_systemd | default(omit) }}"
+  loop: "{{ podman_containers }}"
+  loop_control:
+    label: "{{ item.name }}"
+  when:
+    - podman_containers is defined
+    - podman_containers | length > 0

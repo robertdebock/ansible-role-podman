@@ -16,3 +16,30 @@
     quiet: true
   when:
     - podman_user is defined
+
+- name: assert | Test podman_containers
+  ansible.builtin.assert:
+    that:
+      - podman_containers is iterable
+    quiet: true
+  when:
+    - podman_containers is defined
+
+- name: assert | Test items in podman_containers
+  ansible.builtin.assert:
+    that:
+      - item.name is string
+      - item.name is not none
+      - item.name | length > 0
+      - item.image is string
+      - item.image is not none
+      - item.image | length > 0
+      - item.get('env', {}) is mapping
+      - item.get('publish', []) is iterable
+      - item.get('volume', []) is iterable
+    quiet: true
+  loop: "{{ podman_containers }}"
+  loop_control:
+    label: "{{ item.name | default('UNDEFINED') }}"
+  when:
+    - podman_containers is defined

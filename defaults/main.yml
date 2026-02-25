@@ -11,3 +11,16 @@ podman_storage: []
 # You can start docker as a specific user other than "root".
 # podman_user: my_user
 podman_user: "root"
+
+# You can manage containers using podman using this list.
+# podman_containers:
+#   - name: openbao
+#     image: openbao/openbao
+#     state: started
+#     publish:
+#       - "8200:8200"
+#     volume:
+#       - "/openbao/config:/openbao/config"
+#     env:
+#       BAO_DEV_ROOT_TOKEN_ID: "root"
+podman_containers: []
