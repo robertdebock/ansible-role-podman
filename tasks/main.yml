@@ -29,7 +29,7 @@
 
 - name: Start podman
   ansible.builtin.service:
-    name: "{{ podman_service }}"
+    name: podman.socket
     state: started
     enabled: true
   become: true

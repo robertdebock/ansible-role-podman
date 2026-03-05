@@ -10,5 +10,3 @@ podman_configuration_files:
   policy: /etc/containers/policy.json
   registries: /etc/containers/registries.conf
   storage: /etc/containers/storage.conf
-
-podman_service: podman
